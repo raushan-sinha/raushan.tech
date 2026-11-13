@@ -5,7 +5,7 @@ import { FallingLeaves } from "falling-leaves/react";
 
 export default function Home() {
     return (
-        <main className="flex min-h-dvh items-center justify-center bg-white">
+        <main className="min-h-dvh bg-white">
             <FallingLeaves fullScreen />
             <HeroSection {...HeroSectionData} />
         </main>
