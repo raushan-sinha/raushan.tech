@@ -9,29 +9,29 @@ export default function HeroSection({ name,
     xHandle,
     image }: HeroSectionProps) {
     return (
-        <section className="flex min-h-dvh w-full items-center justify-center px-6 py-16 text-slate-900 sm:px-10 sm:py-20 md:px-16 lg:px-24">
-            <div className="mx-auto flex w-full max-w-3xl flex-col items-center justify-center gap-8 px-2 text-center sm:gap-10 md:flex-row md:items-center md:gap-12 md:px-4 md:text-left">
+        <section className="flex w-full items-start justify-center px-6 pt-16 pb-12 text-slate-900 sm:px-10 sm:pt-24 sm:pb-16 md:px-16 md:pt-28 lg:px-24 lg:pt-32">
+            <div className="mx-auto flex w-fit max-w-full flex-col items-center justify-center gap-6 text-center sm:gap-8 md:flex-row md:items-center md:gap-8 md:text-left">
                 {/* A. Profile pic: width scales per breakpoint, height follows via aspect ratio */}
                 <div className="flex shrink-0 items-center justify-center">
-                    <div className="relative aspect-square w-44 overflow-hidden rounded-[2rem] border-2 border-slate-200 bg-slate-200 ring-1 ring-slate-900/10 sm:w-50 md:w-64 lg:w-50 dark:border-slate-700 dark:bg-slate-800 dark:ring-white/10">
+                    <div className="relative aspect-square w-28 overflow-hidden rounded-3xl border-2 border-slate-200 bg-slate-200 ring-1 ring-slate-900/10 sm:w-32 md:w-38 md:h-40 dark:border-slate-700 dark:bg-slate-800 dark:ring-white/10">
                         <Image
                             src={image}
                             alt={`${name} profile photo`}
                             fill
                             priority
-                            sizes="(min-width: 1280px) 320px, (min-width: 1024px) 288px, (min-width: 768px) 256px, (min-width: 640px) 224px, 176px"
+                            sizes="(min-width: 768px) 144px, (min-width: 640px) 128px, 112px"
                             className="object-cover"
                         />
                     </div>
                 </div>
 
                 {/* B. Details */}
-                <div className="flex min-w-0 flex-1 flex-col items-center gap-4 md:items-start lg:gap-5">
+                <div className="flex w-fit min-w-0 flex-col items-center gap-4 md:items-start lg:gap-5">
                     <div className="flex flex-col gap-1.5">
                         <h1 className="text-xl font-bold tracking-tight sm:text-4xl lg:text-3xl">
                             {name}
                         </h1>
-                        <p className="text-lg font-medium text-blue-700 sm:text-xl lg:text-2xl dark:text-blue-400">
+                        <p className="text-lg font-medium sm:text-xl lg:text-2xl">
                             {title}
                         </p>
                     </div>
