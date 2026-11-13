@@ -1,12 +1,21 @@
+'use client';
 import { HeroSectionProps } from "@/types/heroSection.types";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function HeroSection({ name,
     title,
     country,
-    timeZone,
     image }: HeroSectionProps) {
+
+    const [timeZone, setTimeZone] = useState<string>('');
+
+    // Local time -
+    useEffect(() => {
+        setTimeZone(new Date().toLocaleTimeString());
+    }, []);
+
     return (
         <section className="flex w-full items-start justify-center px-6 pt-16 pb-12 text-slate-900 sm:px-10 sm:pt-24 sm:pb-16 md:px-16 md:pt-28 lg:px-24 lg:pt-32">
             <div className="mx-auto flex w-fit max-w-full flex-col items-center justify-center gap-4 text-center md:flex-row md:items-center md:gap-5 md:text-left">
