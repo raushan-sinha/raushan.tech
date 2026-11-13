@@ -34,7 +34,7 @@ export default function HeroSection({ name,
                         href="https://x.com/84Raushan"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center rounded-full bg-slate-900 px-2.5 py-0.5 text-xs font-semibold leading-5 text-white transition-colors hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-sm dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
+                        className="rounded-full bg-slate-900 px-2.5 py-0.5 text-xs font-semibold leading-5 text-white transition-colors hover:bg-slate-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-sm dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200"
                     >
                         <span>@84Raushan</span>
                     </Link>
