@@ -3,4 +3,5 @@ export interface HeroSectionProps {
     title?: string,
     country?: string,
     image: string, 
+    summary: string;
 }
