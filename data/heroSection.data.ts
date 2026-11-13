@@ -5,7 +5,5 @@ export const HeroSectionData: HeroSectionProps = {
     title : "Frontend Developer",
     country : "India",
     timeZone : "IST (UTC+5:30)",
-    xUrl : "public/profile.jpg",
-    xHandle : "@your_handle",
     image : "/profile.jpg",
 }

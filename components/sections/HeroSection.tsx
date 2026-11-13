@@ -6,8 +6,6 @@ export default function HeroSection({ name,
     title,
     country,
     timeZone,
-    xUrl,
-    xHandle,
     image }: HeroSectionProps) {
     return (
         <section className="flex w-full items-start justify-center px-6 pt-16 pb-12 text-slate-900 sm:px-10 sm:pt-24 sm:pb-16 md:px-16 md:pt-28 lg:px-24 lg:pt-32">
@@ -78,12 +76,6 @@ export default function HeroSection({ name,
                                 <path d="M12 7v5l3 2" />
                             </svg>
                             <span>{timeZone}</span>
-                            <span
-                                id="local-time"
-                                className="rounded-md bg-slate-100 px-1.5 py-px font-medium tabular-nums text-slate-900 dark:bg-slate-800 dark:text-slate-100"
-                            >
-                                --:--
-                            </span>
                         </li>
                     </ul>
                 </div>

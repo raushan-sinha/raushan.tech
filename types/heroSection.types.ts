@@ -3,7 +3,5 @@ export interface HeroSectionProps {
     title?: string,
     country?: string,
     timeZone?: string,
-    xUrl?: string,
-    xHandle?: string,
     image: string, 
 }
