@@ -39,7 +39,7 @@ export default function HeroSection({ name,
                         <span>@84Raushan</span>
                     </Link>
 
-                    <p className="text-sm font-medium leading-snug sm:text-base">
+                    <p className="text-sm font-bold leading-snug sm:text-base">
                         {title}
                     </p>
 
