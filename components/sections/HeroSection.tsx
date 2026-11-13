@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export default function HeroSection({ name,
     title,
     country,
-    image, summary }: HeroSectionProps) {
+    image, summary, socials }: HeroSectionProps) {
 
     const [timeZone, setTimeZone] = useState<string>('');
 
@@ -55,6 +55,28 @@ export default function HeroSection({ name,
                     <p className="text-sm font-bold leading-snug sm:text-base">
                         {title}
                     </p>
+
+                    <ul className="flex items-center justify-center gap-2.5 md:justify-start">
+                        {socials.map((social) => (
+                            <li key={social.label}>
+                                <Link
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={social.label}
+                                    className="inline-flex text-black transition-opacity hover:opacity-70"
+                                >
+                                    <img
+                                        src={social.icon}
+                                        alt=""
+                                        width={16}
+                                        height={16}
+                                        className="h-5 w-5 brightness-0"
+                                    />
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
 
                     <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-400 font-mono">
                         <li className="flex items-center gap-1.5">
