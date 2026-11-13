@@ -78,7 +78,7 @@ export default function HeroSection({ name,
                         ))}
                     </ul>
 
-                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-400 font-mono">
+                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-600 font-mono">
                         <li className="flex items-center gap-1.5">
                             <svg
                                 aria-hidden="true"
@@ -118,7 +118,7 @@ export default function HeroSection({ name,
 
             {/* Summary */}
             <div className="flex w-full max-w-2xl flex-col gap-2 text-start">
-                <p className="text-sm leading-relaxed text-slate-600 sm:text-base sm:leading-7 dark:text-slate-400 font-mono">
+                <p className="text-sm leading-relaxed text-slate-600 sm:text-base sm:leading-7 dark:text-slate-600 font-mono">
                     {summary}
                 </p>
             </div>
