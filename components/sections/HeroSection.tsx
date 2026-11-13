@@ -43,7 +43,7 @@ export default function HeroSection({ name,
                         {title}
                     </p>
 
-                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-400">
+                    <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-0.5 text-xs leading-5 text-slate-600 sm:text-sm md:justify-start dark:text-slate-400 font-mono">
                         <li className="flex items-center gap-1.5">
                             <svg
                                 aria-hidden="true"
